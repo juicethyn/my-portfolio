@@ -36,7 +36,7 @@ export default function RootLayout({
       >
       <body>
         <Navbar />
-        <main className="font-family-mono mx-auto px-3 lg:px-25 py-4 min-h-screen">
+        <main className="font-family-mono mx-auto px-3 lg:px-25">
           {children}
         </main>
       </body>
