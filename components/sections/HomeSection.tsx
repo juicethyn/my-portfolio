@@ -31,10 +31,7 @@ export default function HomeSection() {
 									target="_blank"
 									rel="noopener noreferrer"
 								>
-									<link.icon
-										className="size-8 lg:size-10"
-										color="var(--accent)"
-									/>
+									<link.icon className="size-8 lg:size-10 text-accent" />
 								</Link>
 							</li>
 						))}
