@@ -21,6 +21,21 @@ const space_grotesk = Space_Grotesk({
 export const metadata: Metadata = {
 	title: "Juzzthyn Perez - Software Engineer Portfolio",
 	description: "Software Engineer Website Portfolio",
+	openGraph: {
+		title: "Juzzthyn Perez - Software Engineer Portfolio",
+		description: "Software Engineer Website Portfolio",
+		url: "",
+		siteName: "Juzzthyn Perez - Software Engineer Portfolio",
+		images: [
+			{
+				url: "/images/og-image.png",
+				width: 1200,
+				height: 630,
+				alt: "Juzzthyn Perez Portfolio",
+			},
+		],
+		type: "website",
+	},
 };
 
 export default function RootLayout({
