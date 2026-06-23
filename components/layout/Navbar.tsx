@@ -9,7 +9,7 @@ export default function Navbar() {
 	const status = statusMap[currentStatus];
 
 	return (
-		<nav className="sticky top-0 left-0 right-0 z-50 font-family-mono mx-auto flex items-center justify-between px-3 lg:px-25 py-4 bg-white">
+		<nav className="sticky top-0 left-0 right-0 z-100 font-family-mono mx-auto flex items-center justify-between px-3 lg:px-25 py-4 bg-white">
 			{/* Logo */}
 			<div className="hidden md:flex">
 				<Image src={logo} alt="JP Logo" width={40} height={40} />
@@ -25,9 +25,9 @@ export default function Navbar() {
 
 			<Hamburger />
 
-			<div className="flex items-center gap-2">
-				<span className={`size-2.5 rounded-full ${status.color}`} />
-				<span>{status.label}</span>
+			<div className="flex items-center text-center justify-center gap-2">
+				<span className={`size-1.5 lg:size-2.5 rounded-full ${status.color}`} />
+				<span className="text-base font-normal">{status.label}</span>
 			</div>
 		</nav>
 	);
