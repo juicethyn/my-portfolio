@@ -9,6 +9,7 @@ import {
 	FaPhp,
 	FaPython,
 } from "react-icons/fa";
+import { ImAndroid } from "react-icons/im";
 import { IoLogoJavascript } from "react-icons/io";
 import {
 	RiFirebaseFill,
@@ -19,7 +20,7 @@ import {
 	RiVercelLine,
 } from "react-icons/ri";
 
-import { SiAndroidstudio, SiCanva } from "react-icons/si";
+import { SiCanva } from "react-icons/si";
 
 export const skills = {
 	frontend: [
@@ -33,7 +34,7 @@ export const skills = {
 		},
 		{
 			icon: RiTailwindCssFill,
-			name: "Tailwind CSS",
+			name: "Tailwind",
 		},
 		{
 			icon: RiFlutterFill,
@@ -102,10 +103,10 @@ export const skills = {
 		},
 		{
 			icon: DiVisualstudio,
-			name: "Visual Studio",
+			name: "VS Code",
 		},
 		{
-			icon: SiAndroidstudio,
+			icon: ImAndroid,
 			name: "Android Studio",
 		},
 		{

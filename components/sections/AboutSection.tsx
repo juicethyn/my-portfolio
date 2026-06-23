@@ -7,8 +7,8 @@ import { skills } from "@/constants/skills";
 
 export default function AboutSection() {
 	return (
-		<section className="text-foreground">
-			<div className="lg:flex justify-between items-center my-3">
+		<section className="text-foreground my-6">
+			<div className="lg:flex justify-between items-center">
 				<h1 className="text-3xl lg:text-6xl font-medium">{`./about`}</h1>
 				<p className="text-start lg:text-end text-xs lg:text-base">
 					{`> Identity, background, and the`}
@@ -16,7 +16,7 @@ export default function AboutSection() {
 					{`story behind my code.`}
 				</p>
 			</div>
-			<div className="lg:flex justify-between gap-3">
+			<div className="lg:flex justify-between gap-3 mt-3">
 				<div className="flex-1 text-center lg:text-start text-xs lg:text-xl leading-relaxed">
 					<h2>
 						I'm <b>Juzzthyn</b>, a Software Engineer who enjoys building things
@@ -35,10 +35,10 @@ export default function AboutSection() {
 				</div>
 
 				<div className="flex-1">
-					<h2 className="text-xl font-semibold mb-2 mt-3 lg:mt-0 text-center lg:text-start">
+					<h2 className="text-lg lg:text-xl font-semibold mb-2 mt-3 lg:mt-0 text-center lg:text-start">
 						developer_profile
 					</h2>
-					<h2 className="text-lg font-semibold">education</h2>
+					<h2 className="text-base lg:text-lg font-semibold">education</h2>
 					{/* Render EducationCard for each education entry */}
 					{education.map((edu) => (
 						<EducationCard
@@ -50,8 +50,8 @@ export default function AboutSection() {
 						/>
 					))}
 					<hr className="my-3 border-t border-foreground" /> {/* Divider */}
-					<h2 className="text-lg font-semibold">currently</h2>
-					<p className="my-2">
+					<h2 className="text-base lg:text-lg font-semibold">currently</h2>
+					<p className="text-xs lg:text-base my-2">
 						A <b>Software Engineer Intern</b> at Stratpoint Technologies.
 					</p>
 					<hr className="my-3 border-t border-foreground" /> {/* Divider */}
@@ -64,7 +64,7 @@ export default function AboutSection() {
 				</div>
 			</div>
 			<hr className="my-3 border-t border-foreground" /> {/* Divider */}
-			<div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+			<div className="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-4">
 				<SkillListCard category="frontend" skills={skills.frontend} />
 				<SkillListCard category="backend" skills={skills.backend} />
 				<SkillListCard category="ui/ux design" skills={skills.uiux_design} />

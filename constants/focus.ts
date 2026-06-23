@@ -4,4 +4,5 @@ export const focus = [
 	"AI Agents",
 	"Computer Vision",
 	"UI/UX Design",
+	"Graphic Design",
 ];

@@ -12,12 +12,12 @@ export default function EducationCard({
 	endDate,
 }: EducationCardProps) {
 	return (
-		<div className="flex justify-between my-2">
-			<div>
+		<div className="flex justify-between items-center my-2">
+			<div className="text-[9px] lg:text-base">
 				<p>{degree}</p>
 				<p>{institution}</p>
 			</div>
-			<p className="text-sm text-end">
+			<p className="text-[8px] lg:text-sm text-end">
 				{startDate}
 				<br className="hidden md:block" />
 				{`- ${endDate}`}

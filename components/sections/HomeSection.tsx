@@ -6,7 +6,7 @@ import profile from "@/public/images/profile.png";
 export default function HomeSection() {
 	return (
 		<section>
-			<div className="flex justify-between font-family-sans mt-3 text-xs md:text-sm lg:text-base">
+			<div className="flex justify-between font-family-sans my-3 text-xs md:text-sm lg:text-base">
 				<p>{`// Juzzthyn Perez`}</p>
 				<p>{`// Parañaque City`}</p>
 			</div>
