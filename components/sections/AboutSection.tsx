@@ -58,7 +58,7 @@ export default function AboutSection() {
 					<h2 className="text-lg font-semibold">focus</h2>
 					<div className="flex flex-wrap gap-2 my-2 justify-center lg:justify-start">
 						{focus.map((item) => (
-							<Badge key={item} text={item} />
+							<Badge key={item} text={item} size="large" />
 						))}
 					</div>
 				</div>
