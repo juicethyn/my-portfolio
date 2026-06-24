@@ -7,7 +7,7 @@ import { skills } from "@/constants/skills";
 
 export default function AboutSection() {
 	return (
-		<section className="text-foreground my-6">
+		<section className="text-foreground my-3">
 			<div className="lg:flex justify-between items-center">
 				<h1 className="text-3xl lg:text-6xl font-medium">{`./about`}</h1>
 				<p className="text-start lg:text-end text-xs lg:text-base">

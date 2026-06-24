@@ -1,3 +1,5 @@
+import ExperiencesSection from "@/components/sections/ExperiencesSection";
+
 export default function Experiences() {
-	return <div>Experiences Page</div>;
+	return <ExperiencesSection />;
 }
