@@ -1,8 +1,6 @@
-import getProjects from "../../constants/projects";
 import FeaturedProjects from "../ui/FeaturedProjects";
 
-export default async function ProjectsSection() {
-	const projects = await getProjects();
+export default function ProjectsSection() {
 	return (
 		<section className="text-foreground my-3">
 			<div className="lg:flex justify-between items-center">
@@ -15,24 +13,11 @@ export default async function ProjectsSection() {
 			</div>
 
 			<div className="my-3 text-center">
-				<h2 className="lg:text-3xl font-medium">selected_works</h2>
-				<h3 className="lg:text-lg">{`> A curated collection of projects that best represent my skills, interest, and approach to software engineering.`}</h3>
+				<h2 className="text-xl lg:text-3xl font-medium">selected_works</h2>
+				<h3 className="text-sm lg:text-lg">{`> A curated collection of projects that best represent my skills, interest, and approach to software engineering.`}</h3>
 			</div>
 
-			{projects
-				.filter((project) => project.featured_project)
-				.map((project) => (
-					<FeaturedProjects
-						key={project.id}
-						name={project.name}
-						image={project.image}
-						short_description={project.short_description}
-						technologies={project.technologies}
-						type={project.type}
-						period={project.period}
-						featured_reverse={project.featured_reverse}
-					/>
-				))}
+			<FeaturedProjects />
 		</section>
 	);
 }
