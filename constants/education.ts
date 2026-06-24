@@ -2,7 +2,7 @@ export const education = [
 	{
 		degree: "Bachelor of Science in Computer Science",
 		institution: "Technological University of the Philippines - Manila",
-		startDate: "Sept 2026",
+		startDate: "Sept 2022",
 		endDate: "Aug 2026",
 	},
 	{
