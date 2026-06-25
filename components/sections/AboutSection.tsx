@@ -17,7 +17,7 @@ export default function AboutSection() {
 				</p>
 			</div>
 			<div className="lg:flex justify-between gap-3 mt-3">
-				<div className="flex-1 text-center lg:text-start text-xs lg:text-xl leading-relaxed">
+				<div className="flex-1 text-center lg:text-start text-xs lg:text-xl xl:text-2xl leading-relaxed">
 					<h2>
 						I'm <b>Juzzthyn</b>, a Software Engineer who enjoys building things
 						from the ground up. Whether it's a web application, mobile app, or

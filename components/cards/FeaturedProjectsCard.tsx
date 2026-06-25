@@ -24,7 +24,7 @@ export default function FeaturedProjectsCard({
 }: FeaturedProjectsCardProps) {
 	return (
 		<div
-			className={`grid grid-cols-1 lg:grid-cols-2 h-auto lg:h-90 overflow-hidden rounded-lg gap-3 my-6`}
+			className={`grid grid-cols-1 lg:grid-cols-2 h-auto lg:h-90 xl:h-115 overflow-hidden rounded-lg gap-3 my-6`}
 		>
 			{/* Featured Image */}
 			<div
