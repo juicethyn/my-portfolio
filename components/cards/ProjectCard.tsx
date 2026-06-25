@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -8,6 +9,7 @@ interface ProjectCardProps {
 	type: string;
 	year: number;
 	slug: string;
+	image: string;
 }
 
 export default function ProjectCard({
@@ -15,6 +17,7 @@ export default function ProjectCard({
 	type,
 	year,
 	slug,
+	image,
 }: ProjectCardProps) {
 	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
@@ -38,11 +41,16 @@ export default function ProjectCard({
 			<p>{year}</p>
 			{hoveredProject && (
 				<div
-					className="fixed aspect-video-16/9 pointer-events-auto z-50 bg-white text-black p-2 rounded shadow-lg"
-					style={{ top: mousePosition.y - 40, left: mousePosition.x + 20 }}
+					className="hidden lg:block fixed aspect-video-16/9 pointer-events-auto z-50 bg-white text-black rounded-lg shadow-lg"
+					style={{ top: mousePosition.y - 120, left: mousePosition.x + 20 }}
 				>
-					<h3 className="text-lg font-medium">{name}</h3>
-					<p className="text-xs opacity-60">{type}</p>
+					<Image
+						src={image}
+						alt={name}
+						width={200}
+						height={125}
+						className="object-cover"
+					/>
 				</div>
 			)}
 		</Link>
