@@ -17,6 +17,7 @@ export default async function FeaturedProjects() {
 						type={project.type}
 						period={project.period}
 						featured_reverse={project.featured_reverse}
+						slug={project.slug}
 					/>
 				))}
 		</>

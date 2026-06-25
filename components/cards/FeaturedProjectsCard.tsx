@@ -1,6 +1,5 @@
-"use client";
-
 import Image from "next/image";
+import Link from "next/link";
 import Badge from "../ui/Badge";
 
 interface FeaturedProjectsCardProps {
@@ -11,6 +10,7 @@ interface FeaturedProjectsCardProps {
 	type: string;
 	period: string;
 	featured_reverse: boolean;
+	slug: string;
 }
 
 export default function FeaturedProjectsCard({
@@ -21,6 +21,7 @@ export default function FeaturedProjectsCard({
 	type,
 	period,
 	featured_reverse,
+	slug,
 }: FeaturedProjectsCardProps) {
 	return (
 		<div
@@ -59,13 +60,12 @@ export default function FeaturedProjectsCard({
 					))}
 				</ul>
 
-				<button
-					type="button"
-					onClick={() => alert("View Project")}
-					className="w-full lg:w-60 text-base bg-accent text-background hover:text-accent px-5 py-3 rounded-full mt-2 hover:bg-transparent border hover:border-accent transition-colors duration-300"
+				<Link
+					href={`/projects/${slug}`}
+					className="w-full lg:w-60 text-base text-centerbg-accent text-background hover:text-accent px-5 py-3 rounded-full mt-2 hover:bg-transparent border hover:border-accent transition-colors duration-300"
 				>
 					View Project
-				</button>
+				</Link>
 			</div>
 		</div>
 	);
