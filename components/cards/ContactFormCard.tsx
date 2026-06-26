@@ -1,6 +1,7 @@
 "use client";
 
 import { useActionState } from "react";
+import SubmitButton from "@/components/buttons/SubmitButton";
 import { submitContactForm } from "@/lib/actions";
 
 export default function ContactFormCard() {
@@ -9,10 +10,7 @@ export default function ContactFormCard() {
 		message: "",
 	};
 
-	const [state, formAction, isPending] = useActionState(
-		submitContactForm,
-		initialState,
-	);
+	const [state, formAction] = useActionState(submitContactForm, initialState);
 
 	return (
 		<div className="border border-foreground rounded-xl p-5 lg:p-10 my-3">
@@ -122,14 +120,7 @@ export default function ContactFormCard() {
 					</p>
 				)}
 
-				<button
-					type="submit"
-					disabled={isPending}
-					className="rounded-md bg-foreground px-5 py-3 font-medium text-background transition hover:bg-neutral-800
-					disabled:cursor-not-allowed disabled:opacity-50"
-				>
-					{isPending ? "Submitting..." : "Send Message"}
-				</button>
+				<SubmitButton />
 			</form>
 		</div>
 	);
