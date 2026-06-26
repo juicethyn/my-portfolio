@@ -19,21 +19,21 @@ export default function ContactSection() {
 			</div>
 
 			{/* Contact Form Here */}
-			<ContactFormCard />
-
-			<div className="block lg:flex flex-col lg:flex-row justify-between items-center gap-8 my-3">
-				<h1 className="text-5xl lg:text-9xl lg:leading-28 font-bold">
-					Let's <br className="hidden md:block" />
-					Connect
-				</h1>
-				<div className="my-3">
-					<p className="text-sm lg:text-2xl mb-2">
-						Whether you have an opportunity, project idea, or simply want to
-						chat, I'd be happy to hear from you.
-					</p>
-					<Link
-						href="/"
-						className="
+			<div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-16 my-6">
+				<div className="block lg:flex flex-col justify-center gap-8 my-3">
+					<h1 className="text-5xl lg:text-[160px] lg:leading-36 font-bold">
+						Let's <br className="hidden md:block" />
+						Connect
+					</h1>
+					<div className="my-3">
+						<p className="text-sm lg:text-2xl mb-2">
+							Whether you have an opportunity, project idea, or simply want to
+							chat, I'd be happy to hear from you.
+						</p>
+						<Link
+							href="https://drive.google.com/file/d/1_vXVxidX7VjJxvynm45267h0nxZjtFz_/view?usp=sharing"
+							target="_blank"
+							className="
               inline-flex items-center gap-2
               border border-foreground
               px-5 py-3
@@ -42,17 +42,23 @@ export default function ContactSection() {
               hover:bg-foreground
               hover:text-background
             "
-					>
-						<span>$</span>
-						<span>download_resume</span>
-					</Link>
+						>
+							<span>$</span>
+							<span>download_resume</span>
+						</Link>
+					</div>
 				</div>
+				<ContactFormCard />
 			</div>
 
-			<div className="grid grid-cols-1 lg:grid-cols-3 gap-2 lg:gap-8 lg:my-3">
+			<div className="grid grid-cols-1 lg:grid-cols-4 gap-2 lg:gap-8 lg:my-6">
 				<div>
 					<p className="font-light">EMAIL</p>
 					<p className="font-bold">juzzthynperez.personal@gmail.com</p>
+				</div>
+				<div>
+					<p className="font-light">PHONE NUMBER</p>
+					<p className="font-bold">+639500447192</p>
 				</div>
 				<div>
 					<p className="font-light">LINKED</p>

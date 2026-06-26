@@ -27,7 +27,7 @@ export const projects = [
 				url: "https://www.linkedin.com/in/juzzthynperez/",
 			},
 		],
-		featured_reverse: true,
+		featured_reverse: false,
 		featured_project: true,
 	},
 	{
@@ -90,7 +90,7 @@ export const projects = [
 			},
 		],
 		featured_reverse: true,
-		featured_project: true,
+		featured_project: false,
 	},
 ];
 
