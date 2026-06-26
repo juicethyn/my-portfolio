@@ -1,9 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
-import { navLinks } from "@/constants/navigation";
 import { currentStatus, statusMap } from "@/constants/status";
 import logo from "@/public/icons/logo.svg";
 import Hamburger from "./Hamburger";
+import Navlist from "./Navlist";
 
 export default function Navbar() {
 	const status = statusMap[currentStatus];
@@ -15,13 +14,7 @@ export default function Navbar() {
 				<Image src={logo} alt="JP Logo" width={40} height={40} />
 			</div>
 
-			<div className="hidden md:flex font-medium gap-8">
-				{navLinks.map((link) => (
-					<Link key={link.name} href={link.href}>
-						{">"} {link.name}
-					</Link>
-				))}
-			</div>
+			<Navlist />
 
 			<Hamburger />
 
