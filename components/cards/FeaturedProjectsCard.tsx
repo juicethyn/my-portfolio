@@ -26,7 +26,7 @@ export default function FeaturedProjectsCard({
 }: FeaturedProjectsCardProps) {
 	return (
 		<div
-			className={`grid grid-cols-1 lg:grid-cols-2 h-auto lg:h-90 xl:h-115 overflow-hidden rounded-lg gap-3 my-6`}
+			className={`grid grid-cols-1 lg:grid-cols-2 h-auto lg:h-90 xl:h-115 overflow-hidden rounded-lg my-6`}
 		>
 			<div
 				className={`w-full max-w-5xl mx-auto ${featured_reverse ? "lg:order-2" : "lg:order-1"}`}

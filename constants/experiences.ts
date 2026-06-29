@@ -5,7 +5,7 @@ export const experiences = [
 		position: "Software Engineer Intern",
 		duration: "Jun 2026 - Present",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla enim dui, condimentum non leo sit amet, convallis sollicitudin arcu. Etiam eu ex non arcu imperdiet cursus. Suspendisse a porttitor tortor.",
+			"Learning modern software engineering practices through hands-on training with Next.js and related web development technologies. Building responsive web applications while gaining experience with professional workflows, version control, and UI/UX best practices.",
 	},
 	{
 		id: 2,
@@ -13,7 +13,7 @@ export const experiences = [
 		position: "Research & Development Intern",
 		duration: "Feb 2026 - May 2026",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla enim dui, condimentum non leo sit amet, convallis sollicitudin arcu. Etiam eu ex non arcu imperdiet cursus. Suspendisse a porttitor tortor.",
+			"Researched AI agent technologies, primarily OpenClaw, to explore automation and workflow optimization. Built, tested, and improved AI automation workflows while documenting implementations and debugging issues.",
 	},
 	{
 		id: 3,
@@ -21,6 +21,6 @@ export const experiences = [
 		position: "Freelance Graphic Designer",
 		duration: "Aug 2025 - Sept 2025",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla enim dui, condimentum non leo sit amet, convallis sollicitudin arcu. Etiam eu ex non arcu imperdiet cursus. Suspendisse a porttitor tortor.",
+			"Designed promotional graphics for game announcements, events, and marketing materials for RAN Online EP6: Remastered. Delivered high-quality visuals that met client expectations and project deadlines.",
 	},
 ];
