@@ -29,7 +29,7 @@ export default function Hamburger() {
 				aria-label="Close menu"
 				onClick={closeMenu}
 				className={`
-					fixed top-15 bottom-0 left-0 right-0
+					fixed top-20 bottom-0 left-0 right-0
 					bg-black/50 z-40
 					transition-opacity duration-300
 					${isOpen ? "opacity-100" : "opacity-0 pointer-events-none"}

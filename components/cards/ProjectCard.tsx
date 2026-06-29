@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import Badge from "../ui/Badge";
 
 interface ProjectCardProps {
 	name: string;
@@ -10,6 +11,7 @@ interface ProjectCardProps {
 	year: number;
 	slug: string;
 	image: string;
+	technologies?: string[];
 }
 
 export default function ProjectCard({
@@ -18,6 +20,7 @@ export default function ProjectCard({
 	year,
 	slug,
 	image,
+	technologies = [],
 }: ProjectCardProps) {
 	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
@@ -37,7 +40,11 @@ export default function ProjectCard({
 		>
 			<p>{name}</p>
 			<p className="hidden lg:block">{type}</p>
-			<p className="hidden lg:block">Testing</p>
+			<div className="hidden lg:flex gap-2 justify-center items-center">
+				{technologies.slice(0, 3).map((tech) => (
+					<Badge key={tech} text={tech} size="small" />
+				))}
+			</div>
 			<p>{year}</p>
 			{hoveredProject && (
 				<div

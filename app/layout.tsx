@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, JetBrains_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({
 	variable: "--font-inter",
@@ -47,12 +48,20 @@ export default function RootLayout({
 		<html
 			lang="en"
 			className={`${inter.variable} ${space_grotesk.variable} ${jetbrains_mono.variable} antialiased`}
+			suppressHydrationWarning
 		>
 			<body>
-				<Navbar />
-				<main className="font-family-mono mx-auto px-3 lg:px-25">
-					{children}
-				</main>
+				<ThemeProvider
+					attribute="class"
+					defaultTheme="system"
+					enableSystem
+					disableTransitionOnChange
+				>
+					<Navbar />
+					<main className="font-family-mono mx-auto px-3 lg:px-25">
+						{children}
+					</main>
+				</ThemeProvider>
 			</body>
 		</html>
 	);

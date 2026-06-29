@@ -13,7 +13,7 @@ export default function HomeSection() {
 
 			<div className="flex flex-col lg:flex-row items-start lg:items-center justify-between mt-6">
 				<div className="text-center lg:text-start">
-					<h3 className="font-family-mono font-normal text-[16px] lg:text-2xl">
+					<h3 className="font-family-mono font-normal text-accent text-[16px] lg:text-2xl">
 						Aspiring
 					</h3>
 					<h1 className="text-6xl md:text-8xl lg:text-9xl font-normal leading-[0.9] mb-4">

@@ -48,7 +48,7 @@ export default function ContactFormCard() {
 							id="subject"
 							name="subject"
 							defaultValue=""
-							className="w-full rounded-md border border-gray-300 bg-white px-4 py-2 outline-none transition focus:border-black"
+							className="w-full rounded-md border border-gray-300 bg-background px-4 py-2 outline-none transition focus:border-foreground"
 						>
 							<option value="" disabled>
 								Select a subject

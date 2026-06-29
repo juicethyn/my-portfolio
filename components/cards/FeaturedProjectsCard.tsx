@@ -26,13 +26,13 @@ export default function FeaturedProjectsCard({
 }: FeaturedProjectsCardProps) {
 	return (
 		<div
-			className={`grid grid-cols-1 lg:grid-cols-2 h-auto lg:h-90 xl:h-115 overflow-hidden rounded-lg gap-3 my-6`}
+			className={`grid grid-cols-1 lg:grid-cols-2 h-auto lg:h-90 xl:h-115 overflow-hidden rounded-lg my-6`}
 		>
 			<div
 				className={`w-full max-w-5xl mx-auto ${featured_reverse ? "lg:order-2" : "lg:order-1"}`}
 			>
 				<AspectRatio
-					ratio={16 / 9}
+					ratio={16 / 10}
 					className="rounded-3xl bg-muted overflow-hidden my-4"
 				>
 					<Image src={image} alt={name} fill className="w-full object-cover" />
@@ -62,7 +62,7 @@ export default function FeaturedProjectsCard({
 
 				<Link
 					href={`/projects/${slug}`}
-					className="w-full lg:w-60 text-base text-center bg-foreground text-background hover:text-accent px-5 py-3 mt-2 hover:bg-transparent border hover:border-accent transition-colors duration-300"
+					className="w-auto lg:w-60 text-base text-center bg-foreground text-background hover:text-accent px-5 py-3 mt-2 hover:bg-transparent border hover:border-accent transition-colors duration-300"
 				>
 					View Project
 				</Link>
