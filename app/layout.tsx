@@ -20,6 +20,7 @@ const space_grotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
+	metadataBase: new URL("https://juzzthynperez.vercel.app"),
 	title: "Juzzthyn Perez - Software Engineer Portfolio",
 	description: "Software Engineer Website Portfolio",
 	openGraph: {

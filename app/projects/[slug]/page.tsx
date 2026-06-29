@@ -19,6 +19,8 @@ export default async function ProjectsPage({ params }: ProjectCardProps) {
 		notFound();
 	}
 
+	await new Promise((resolve) => setTimeout(resolve, 2000));
+
 	return (
 		<section>
 			<div className="flex justify-between my-3">
