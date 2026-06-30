@@ -1,5 +1,4 @@
-import ExperiencesCard from "@/components/cards/ExperiencesCard";
-import { experiences } from "@/constants/experiences";
+import ExperiencesGrid from "@/components/ui/ExperiencesGrid";
 
 export default function ExperiencesSection() {
 	return (
@@ -18,18 +17,7 @@ export default function ExperiencesSection() {
 				</p>
 			</div>
 
-			<div className="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-4 my-3">
-				{experiences.map((exp) => (
-					<ExperiencesCard
-						key={exp.id}
-						id={exp.id}
-						company={exp.company}
-						position={exp.position}
-						duration={exp.duration}
-						description={exp.description}
-					/>
-				))}
-			</div>
+			<ExperiencesGrid />
 		</section>
 	);
 }
