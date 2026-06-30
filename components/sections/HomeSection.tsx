@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
 import { socialLinks } from "@/constants/socials";
@@ -12,7 +15,12 @@ export default function HomeSection() {
 			</div>
 
 			<div className="flex flex-col lg:flex-row items-start lg:items-center justify-between mt-6">
-				<div className="text-center lg:text-start">
+				<motion.div
+					className="text-center lg:text-start"
+					initial={{ opacity: 0, y: -20 }}
+					animate={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
+				>
 					<h3 className="font-family-mono font-normal text-accent text-[16px] lg:text-2xl">
 						Aspiring
 					</h3>
@@ -25,7 +33,11 @@ export default function HomeSection() {
 					</p>
 					<ul className="flex flex-row gap-4 mt-4 justify-center lg:justify-start">
 						{socialLinks.map((link) => (
-							<li key={link.name}>
+							<motion.li
+								key={link.name}
+								whileHover={{ scale: 1.2 }}
+								transition={{ type: "spring", stiffness: 300 }}
+							>
 								<Link
 									href={link.href}
 									target="_blank"
@@ -33,18 +45,24 @@ export default function HomeSection() {
 								>
 									<link.icon className="size-8 lg:size-10 text-accent" />
 								</Link>
-							</li>
+							</motion.li>
 						))}
 					</ul>
-				</div>
+				</motion.div>
 
-				<div className="relative lg:w-287.5 h-auto mt-6 lg:mt-0">
+				<motion.div
+					className="relative lg:w-287.5 h-auto mt-6 lg:mt-0"
+					initial={{ opacity: 0, y: -20 }}
+					animate={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
+					whileHover={{ scale: 1.03 }}
+				>
 					<Image
 						src={profile}
 						alt="Profile Image"
 						className="object-cover object-center mask-[linear-gradient(to_bottom,black_70%,transparent_100%)]"
 					/>
-				</div>
+				</motion.div>
 			</div>
 		</section>
 	);

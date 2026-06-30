@@ -11,8 +11,14 @@ export default function Navbar() {
 	return (
 		<nav className="sticky top-0 left-0 right-0 z-100 font-family-mono mx-auto flex items-center justify-between px-3 lg:px-25 py-4 bg-background">
 			{/* Logo */}
-			<div className="hidden md:flex w-auto h-auto">
-				<Image src={logo} alt="JP Logo" width={40} height={40} />
+			<div className="hidden md:flex">
+				<Image
+					src={logo}
+					alt="JP Logo"
+					width={40}
+					height={33}
+					className="object-cover"
+				/>
 			</div>
 
 			<Navlist />

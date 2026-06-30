@@ -35,7 +35,7 @@ export default function FeaturedProjectsCard({
 					ratio={16 / 10}
 					className="rounded-3xl bg-muted overflow-hidden my-4"
 				>
-					<Image src={image} alt={name} fill className="w-full object-cover" />
+					<Image src={image} alt={name} fill className="object-cover" />
 				</AspectRatio>
 			</div>
 
