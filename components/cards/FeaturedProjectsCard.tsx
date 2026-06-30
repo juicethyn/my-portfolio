@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
 import { AspectRatio } from "../ui/aspect-ratio";
@@ -25,8 +28,12 @@ export default function FeaturedProjectsCard({
 	slug,
 }: FeaturedProjectsCardProps) {
 	return (
-		<div
+		<motion.div
 			className={`grid grid-cols-1 lg:grid-cols-2 h-auto lg:h-90 xl:h-115 overflow-hidden rounded-lg my-6`}
+			initial={{ opacity: 0, y: 20 }}
+			whileInView={{ opacity: 1, y: 0 }}
+			viewport={{ once: true }}
+			transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
 		>
 			<div
 				className={`w-full max-w-5xl mx-auto ${featured_reverse ? "lg:order-2" : "lg:order-1"}`}
@@ -67,6 +74,6 @@ export default function FeaturedProjectsCard({
 					View Project
 				</Link>
 			</div>
-		</div>
+		</motion.div>
 	);
 }
