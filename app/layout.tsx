@@ -21,19 +21,19 @@ const space_grotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
 	metadataBase: new URL("https://juzzthynperez.vercel.app"),
-	title: "Juzzthyn Perez - Software Engineer Portfolio",
+	title: "Juzzthyn Perez | Software Engineer Portfolio",
 	description: "Software Engineer Website Portfolio",
 	openGraph: {
-		title: "Juzzthyn Perez - Software Engineer Portfolio",
+		title: "Juzzthyn Perez | Software Engineer Portfolio",
 		description: "Software Engineer Website Portfolio",
 		url: "",
-		siteName: "Juzzthyn Perez - Software Engineer Portfolio",
+		siteName: "Juzzthyn Perez | Software Engineer Portfolio",
 		images: [
 			{
 				url: "/images/og-image.png",
 				width: 1200,
 				height: 630,
-				alt: "Juzzthyn Perez Portfolio",
+				alt: "Juzzthyn Perez Website Portfolio",
 			},
 		],
 		type: "website",

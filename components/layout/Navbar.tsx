@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { currentStatus, statusMap } from "@/constants/status";
 import logo from "@/public/icons/logo.svg";
 import ThemeToggle from "../buttons/ThemeToggleButton";
@@ -11,7 +12,7 @@ export default function Navbar() {
 	return (
 		<nav className="sticky top-0 left-0 right-0 z-100 font-family-mono mx-auto flex items-center justify-between px-3 lg:px-25 py-4 bg-background">
 			{/* Logo */}
-			<div className="hidden md:flex">
+			<Link className="hidden md:flex" href="/">
 				<Image
 					src={logo}
 					alt="JP Logo"
@@ -19,7 +20,7 @@ export default function Navbar() {
 					height={33}
 					className="object-cover"
 				/>
-			</div>
+			</Link>
 
 			<Navlist />
 

@@ -32,7 +32,7 @@ export default function FeaturedProjectsCard({
 			className={`grid grid-cols-1 lg:grid-cols-2 h-auto lg:h-90 xl:h-115 overflow-hidden rounded-lg my-6`}
 			initial={{ opacity: 0, y: 20 }}
 			whileInView={{ opacity: 1, y: 0 }}
-			viewport={{ once: true }}
+			viewport={{ once: false }}
 			transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
 		>
 			<div

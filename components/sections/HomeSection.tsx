@@ -20,6 +20,7 @@ export default function HomeSection() {
 					initial={{ opacity: 0, y: -20 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
+					viewport={{ once: false }}
 				>
 					<h3 className="font-family-mono font-normal text-accent text-[16px] lg:text-2xl">
 						Aspiring
@@ -56,6 +57,7 @@ export default function HomeSection() {
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
 					whileHover={{ scale: 1.03 }}
+					viewport={{ once: false }}
 				>
 					<Image
 						src={profile}

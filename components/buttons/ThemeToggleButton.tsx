@@ -33,7 +33,7 @@ export default function ThemeToggle() {
 		<button
 			type="button"
 			onClick={toggleTheme}
-			className="flex items-center gap-2 rounded-full px-3 py-3 transition hover:bg-foreground hover:text-background"
+			className="flex items-center gap-2 rounded-full px-3 py-3 transition hover:bg-foreground hover:text-background ease-in-out duration-500"
 		>
 			{resolvedTheme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
 		</button>

@@ -13,7 +13,7 @@ export default function Navlist() {
 				<Link
 					key={link.name}
 					href={link.href}
-					className={`hover:text-accent ${pathname === link.href ? "text-accent" : ""}`}
+					className={`hover:text-accent ease-in-out duration-300 ${pathname === link.href ? "text-accent" : ""}`}
 				>
 					{">"} {link.name}
 				</Link>

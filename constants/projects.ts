@@ -28,7 +28,7 @@ export const projects = [
 	},
 	{
 		id: 2,
-		name: "Emerald Bank",
+		name: "EmeraldBank",
 		slug: "emeraldbank",
 		image: "/images/emeraldbank.png",
 		description:
@@ -136,8 +136,8 @@ export const projects = [
 	},
 	{
 		id: 6,
-		name: "ATM Simulation Project",
-		slug: "atm-simulation-project",
+		name: "ATM Simulation",
+		slug: "atm-simulation",
 		image: "/images/no_preview.png",
 		description:
 			"An ATM simulation built in C++ that replicates core banking operations such as user authentication, balance inquiry, deposits, withdrawals, and transaction management. The project uses a USB flash drive to emulate an ATM card by storing user account information, providing a practical demonstration of file handling, data structures, and system logic.",
