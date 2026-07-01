@@ -21,7 +21,7 @@ export default function ContactSection() {
 			{/* Contact Form Here */}
 			<div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-16 my-6">
 				<div className="block lg:flex flex-col justify-center gap-8 my-3">
-					<h1 className="text-5xl lg:text-[160px] lg:leading-36 font-bold">
+					<h1 className="text-5xl md:text-6xl lg:text-9xl font-bold">
 						Let's <br className="hidden md:block" />
 						Connect
 					</h1>

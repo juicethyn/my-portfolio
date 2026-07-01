@@ -227,7 +227,7 @@ export const projects = [
 		technologies: ["C"],
 		type: "Mini Game",
 		period: "Nov 2023 - Dec 2023",
-		year: 2024,
+		year: 2023,
 		role: "Solo Developer",
 		role_description:
 			"Designed and developed the project independently, implementing the game logic, board generation, user input handling, and win/loss detection. Applied fundamental programming concepts, control structures, and algorithmic problem-solving to recreate the classic game.",
