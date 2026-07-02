@@ -8,14 +8,15 @@ A modern developer portfolio built with Next.js, showcasing my projects, technic
 ![alt text](/public/images/og-image.png)
 
 ## Features
+- Server & Client Components
+- Dynamic Routing
+- Server Actions 
 - Responsive Design
-- Dark/Light Mode
-- Animated user interface and Page Transitions using Framer Motion
-- SEO optimization with OpenGraph Metadata
-- Contact form using Resend API
-- Error boundaries (global-error)
-- Not found Page (404)
-- Optimized Images 
+- Light/Dark Mode 
+- Page Transitions & Animations 
+- SEO Optimization 
+- Image Optimization 
+- Error Handling 
 
 ## Tech Stack
 ### Frontend
