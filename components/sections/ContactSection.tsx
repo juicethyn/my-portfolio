@@ -61,7 +61,7 @@ export default function ContactSection() {
 					<p className="font-bold">+639500447192</p>
 				</div>
 				<div>
-					<p className="font-light">LINKED</p>
+					<p className="font-light">LINKEDIN</p>
 					<Link
 						href="https://linkedin.com/in/juzzthynperez"
 						className="font-bold"

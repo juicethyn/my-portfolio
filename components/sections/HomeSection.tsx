@@ -29,7 +29,7 @@ export default function HomeSection() {
 						Software Engineer
 					</h1>
 					<p className="font-family-mono font-normal text-sm lg:text-lg">
-						I love building complex, analysis-drive projects and developing
+						I love building complex, analysis-driven projects and developing
 						full-stack web and mobile applications.
 					</p>
 					<ul className="flex flex-row gap-4 mt-4 justify-center lg:justify-start">

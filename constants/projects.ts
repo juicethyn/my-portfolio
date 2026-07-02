@@ -184,6 +184,11 @@ export const projects = [
 				name: "Figma",
 				url: "https://www.figma.com/proto/xE3tedbGCrCQMFbxno5Epy/-Main--Juan-the-Man?node-id=338-1026&p=f&t=Spx9Yn0WfLDffoWH-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=338%3A1026&show-proto-sidebar=1",
 			},
+			{
+				id: 2,
+				name: "Behance",
+				url: "https://www.behance.net/gallery/219941703/Juan-the-Man-UIUX-Mobile-App-Design",
+			},
 		],
 		featured_reverse: false,
 		featured_project: true,

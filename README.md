@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Software Engineering Personal Portfolio
+A modern developer portfolio built with Next.js, showcasing my projects, technical skills, and experience. The website features responsive design, subtle animations, SEO optimization, and a contact form powered by Resend.
+
+## Live Demo
+🔗 https://juzzthynperez.vercel.app
+
+## Preview
+![alt text](/public/images/og-image.png)
+
+## Features
+- Responsive Design
+- Dark/Light Mode
+- Animated user interface using Framer Motion
+- SEO optimization with OpenGraph Metadata
+- Contact form using Resend API
+- Error boundaries (global-error)
+- Not found Page (404)
+- Optimized Images 
+
+## Tech Stack
+### Frontend
+- Next.js
+- React
+- Typescript
+- Tailwind CSS
+- Shadcn
+- Motion
+
+### Backend
+- Next.js Server Actions
+- Resend
+- Zod
+
+### Deployment
+- Vercel
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js
+- pnpm
+
+### Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/juicethyn/my-portfolio.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```bash
+cd portfolio
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a `.env.local` file.
 
-## Learn More
+```env
+RESEND_API_KEY=your_api_key
+```
 
-To learn more about Next.js, take a look at the following resources:
+Run the development server.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+pnpm dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Open:
 
-## Deploy on Vercel
+```
+http://localhost:3000
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Production Build
+
+```bash
+pnpm build
+pnpm start
+```
+
+---
+
+## Future Improvements
+- Blog section
+
+---
+
+## License
+
+This project is for educational and portfolio purposes.
+
