@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, JetBrains_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
+import PageTransition from "@/components/layout/PageTransition";
 import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({
@@ -59,9 +60,7 @@ export default function RootLayout({
 					disableTransitionOnChange
 				>
 					<Navbar />
-					<main className="font-family-mono mx-auto px-3 lg:px-25">
-						{children}
-					</main>
+					<PageTransition>{children}</PageTransition>
 				</ThemeProvider>
 			</body>
 		</html>
