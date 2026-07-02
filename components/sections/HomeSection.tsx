@@ -43,6 +43,7 @@ export default function HomeSection() {
 									href={link.href}
 									target="_blank"
 									rel="noopener noreferrer"
+									aria-label={`Link to ${link.name}`}
 								>
 									<link.icon className="size-8 lg:size-10 text-accent" />
 								</Link>

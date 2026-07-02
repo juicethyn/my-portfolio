@@ -21,6 +21,7 @@ export default function ThemeToggle() {
 		return (
 			<button
 				type="button"
+				aria-label="Toggle theme"
 				className="flex items-center gap-2 rounded-full px-3 py-2 opacity-50 cursor-not-allowed"
 				disabled
 			>
